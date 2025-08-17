@@ -6,6 +6,7 @@
   <% @list_of_movies.each do |a_movie| %>
     <li>
       <img src="<%= a_movie.image %>" width="100">
+
       <a href="/movies/<%= a_movie.id %>">
         <%= a_movie.title %> (<%= a_movie.year %>)
       </a>
@@ -14,7 +15,6 @@
         🏆
       <% end %>
 
-      /movies/<%= a_movie.id %>
     </li>
   <% end %>
 </ul>
